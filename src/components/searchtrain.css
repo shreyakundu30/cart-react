@@ -1,0 +1,45 @@
+  .card-section {
+    flex: 1; /* Takes up 50% of the available width */
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  /* Styling for the cards */
+  .card {
+    width: 350px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 8px;
+    margin-left: 45px;
+    background-image: url('https://w0.peakpx.com/wallpaper/973/506/HD-wallpaper-exotic-background-2018-abstract-art-bubu-colorfull-druffix-exotic-good-iphone-lg-magma-new-style-stylez-thumbnail.jpg');
+  }
+  
+  .card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .card h3 {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+  
+  .card p {
+    font-size: 16px;
+    color: white;
+  }
+  .pay {
+    padding: 7px 20px;
+    background-color: #38E54D;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    font-size: 19px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-left: 5px;
+    width: 250px;
+  }

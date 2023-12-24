@@ -1,0 +1,24 @@
+/* BackToTopButton.css */
+
+.back-to-top-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #3D0C11;;
+    color: white;
+    border: none;
+    border-radius: 100%;
+    padding: 10px;
+    cursor: pointer;
+    display: none;
+  }
+  
+  .back-to-top-button.show {
+    display: block;
+    opacity: 1;
+  }
+  
+  .back-to-top-button.hide {
+    opacity: 0;
+  }
+  

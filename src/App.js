@@ -1,25 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Homepage from './components/Homepage';
+import Booking from './components/Booking';
+import Aboutus from './components/Aboutus';
+import Contactus from './components/Contactus';
+import Alerts from './components/Alerts';
+import Pnrenquiry from './components/Pnrenquiry';
+import Cancelticket from './components/Cancelticket';
+import SearchTrain from './components/SearchTrain';
+import Payment from './components/Payment';
+import Loginpage from './components/Loginpage';
+import Registerpage from './components/Registerpage';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div>
+        {/* Your Header component goes here */}
+        <Routes>
+          <Route path="/" element={<Homepage />} />
+          <Route path="/Booking" element={<Booking />} />
+          <Route path="/Aboutus" element={<Aboutus />} />
+          <Route path="/Contactus" element={<Contactus />} />
+          <Route path="/Alerts" element={<Alerts />} />
+          <Route path="/Pnrenquiry" element={<Pnrenquiry />} />
+          <Route path="/Cancelticket" element={<Cancelticket />} />
+          <Route path="/SearchTrain" element={<SearchTrain />} />
+          <Route path="/Payment" element={<Payment />} />
+          <Route path="/Loginpage" element={<Loginpage />} />
+          <Route path="/Registerpage" element={<Registerpage />} />
+
+          {/* Add more routes for other subtopics */}
+        </Routes>
+      </div>
+    </Router>
   );
-}
+};
 
 export default App;

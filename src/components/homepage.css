@@ -1,0 +1,414 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #000000;
+  color: #fff;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: larger;
+}
+
+.logo-left img,
+.logo-right img {
+  max-height: 100px; /* Adjust the max-height as needed */
+}
+
+.nav-center {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.nav-center a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  padding: 8px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Added box shadow */
+}
+
+.nav-center a:hover {
+  background-color: #555;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.dropbtn {
+  background-color: #333;
+  color: #fff;
+  padding: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+
+.dropdown-content a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 8px;
+}
+
+.dropdown-content a:hover {
+  background-color: #555;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.train-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.train-part {
+  flex: 1;
+  display: flex;
+  flex-basis: 33%;
+  justify-content: center;
+}
+
+.train-part img {
+  max-width: 100%;
+  height: auto;
+}
+.content-row {
+  margin-bottom: 20px;
+}
+
+.content-heading {
+  font-size: 33px;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  margin-bottom: 10px;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.content-text {
+  font-size: 23px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+  color: red;
+}
+
+.content-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-bottom: 1px solid #ccc;
+  font-size: 20px; /* Increase the font size to 20 pixels */
+}
+
+.content-row:nth-child(2) .content-icons {
+  justify-content: space-between;
+}
+
+.content-item {
+  width: 150px;
+  text-align: center;
+  margin: 10px;
+}
+
+.content-item i {
+  font-size: 25px;
+  margin-bottom: 5px;
+  margin-right: 10px;
+}
+
+.content-item span {
+  font-size: 15px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+/* Add this to your CSS or homepage.css file */
+.content-item {
+  display: inline-block;
+  margin: 10px; /* Adjust the margin as needed */
+}
+
+.content-icon-circle {
+  background-color: #42032C; /* Set the background color of the circle */
+  width: 60px; /* Set the width of the circle */
+  height: 60px; /* Set the height of the circle */
+  border-radius: 50%; /* Make it a circle */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Add a smooth transition effect */
+}
+
+.content-icon {
+  color: #fff; /* Set the color of the icon inside the circle */
+  font-size: 24px; /* Adjust the font size of the icon */
+}
+
+/* Add more styles as needed */
+
+.holiday-section {
+  padding: 20px;
+  background-color: white;
+}
+
+.holiday-heading {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  color: red;
+}
+
+.holiday-cards {
+  display: flex;
+  justify-content: center;
+  padding-top: 1%;
+}
+
+.holiday-card {
+  width: 300px;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  flex-basis: 50%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.place-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.place-description {
+  margin-top: 10px;
+}
+.holiday-card {
+  width: 300px;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.holiday-card:hover {
+  transform: scale(1.05);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 12px;
+}
+.holiday-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.read-more-button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align:center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: auto;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin-left: 70px;
+  text-align: end;
+  align-self: center;
+  transition: background-color 0.3s ease;
+}
+.read-more-button:hover {
+  background-color: #45a049;
+}
+/* Add these styles to your existing styles or create a new CSS file */
+
+.holiday-card:nth-child(1) {
+  background-color: #ffcccb; /* Light Red */
+  background-image: url('https://images.pexels.com/photos/7130535/pexels-photo-7130535.jpeg');
+}
+
+.holiday-card:nth-child(2) {
+  background-color: #c2f0c2; /* Light Green */
+  background-image: url('https://images.pexels.com/photos/6847584/pexels-photo-6847584.jpeg?auto=compress&cs=tinysrgb&w=600');
+}
+
+.holiday-card:nth-child(3) {
+  background-color: #b3e0ff; /* Light Blue */
+  background-image: url('https://images.pexels.com/photos/7130874/pexels-photo-7130874.jpeg?auto=compress&cs=tinysrgb&w=600');
+}
+
+.holiday-card:nth-child(4) {
+  background-color: #ffd699; /* Light Orange */
+  background-image: url('https://images.pexels.com/photos/4699016/pexels-photo-4699016.jpeg?auto=compress&cs=tinysrgb&w=600');
+}
+
+.holiday-card:nth-child(5) {
+  background-color: #e6e6fa; /* Lavender */
+  background-image: url('https://images.pexels.com/photos/7130500/pexels-photo-7130500.jpeg?auto=compress&cs=tinysrgb&w=600');
+}
+
+/* Add this to your homepage.css file or create a new CSS file */
+
+.subscribe-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row; /* Changed to row to have the image on the right */
+  padding: 20px;
+  background-image: url('https://images.squarespace-cdn.com/content/v1/5dfed2447aca53746d2295c4/1577634198085-FUSQL2V7WD8Q1MKQ3JEQ/gradient.gif?format=2500w'); /* Adjust the background color as needed */
+  margin-top: 20px; /* Adjust the top margin as needed */
+}
+
+.subscribe-section {
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: larger;
+  flex: 1; /* Take up the available space on the left */
+}
+
+.subscribe-image {
+  max-width: 50%; /* Take up half of the width */
+  height: auto;
+}
+
+/* Other styles remain the same */
+.subscribe-form {
+  display: flex;
+  gap: 10px; /* Adjust the gap as needed */
+  margin-top: 15px; /* Add top margin for spacing */
+  justify-content: center;
+}
+
+.subscribe-form input {
+  padding: 10px 35px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.subscribe-form button {
+  padding: 10px 15px;
+  background-color: #7A316F;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.subscribe-form button:hover {
+  background-color: #99627A; /* lighter shade on hover */
+}
+.subscribe-toast-container {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 300px; /* Adjust the width as needed */
+  z-index: 9999; /* Ensure the notification appears above other elements */
+}
+
+/* Styling for the success notification */
+.subscribe-toast {
+  background-color: #4caf50; /* Green background color */
+  color: #fff; /* White text color */
+  padding: 16px; /* Padding around the content */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle lift */
+}
+
+/* Social Media Section */
+.social-media-section {
+  background-color: #f8f8f8;
+  padding: 20px;
+  text-align: center;
+}
+
+.social-media-heading {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #333;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.social-media-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.social-media-icons a {
+  display: inline-block;
+  margin: 0 22px; /* Add some margin between icons */
+  color: #333;
+  font-size: 32px; /* Increase font size for a more attractive look */
+  transition: transform 0.3s ease, color 0.3s ease; /* Add transition for a smoother hover effect */
+}
+
+/* Apply unique and attractive colors to each icon */
+.social-media-icons a:nth-child(1) {
+  color: #3b5998; /* Facebook Blue */
+}
+
+.social-media-icons a:nth-child(2) {
+  color: #c4302b; /* YouTube Red */
+}
+
+.social-media-icons a:nth-child(3) {
+  color: #1da1f2; /* Twitter Blue */
+}
+
+.social-media-icons a:nth-child(4) {
+  color: #bc2a8d; /* Instagram Purple */
+}
+
+.social-media-icons a:nth-child(5) {
+  color: #0088cc; /* Telegram Blue */
+}
+
+.social-media-icons a:nth-child(6) {
+  color: #0077b5; /* LinkedIn Blue */
+}
+
+.social-media-icons a:nth-child(7) {
+  color: #35465d; /* Tumblr Blue */
+}
+
+.social-media-icons a:nth-child(8) {
+  color: #bd081c; /* Pinterest Red */
+}
+
+.social-media-icons a:nth-child(9) {
+  color: green; /* Google Play Green */
+}
+
+.social-media-icons a:hover {
+  transform: scale(1.2); /* Add a slight scale effect on hover */
+  color: #007bff; /* Change the color on hover to your preferred color */
+}
+
