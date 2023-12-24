@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import { NavLink, Link } from 'react-router-dom';
+import Footer from './Footer';
+import BackToTopButton from './BackToTopButton';
 
 const LoginPageContainer = styled.div`
   display: flex;
@@ -248,6 +250,9 @@ const LoginPage = () => {
         </LoginSection>
       </ContentWrapper>
     </LoginPageContainer>
+
+      <Footer />
+      <BackToTopButton />
     </div>
   );
 };
