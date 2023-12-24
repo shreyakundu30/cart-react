@@ -119,7 +119,7 @@ const pages = [
   { label: 'Home', path: '/' },
   { label: 'Contact Us', path: '/Contactus' },
   { label: 'Services', path: '/Services' },
-  { label: 'Terms & Conditions', path: '/terms' },
+  { label: 'Terms & Conditions', path: '/TermC' },
   { label: 'About Us', path: '/Aboutus' },
 ];
 
