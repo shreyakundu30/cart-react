@@ -115,6 +115,14 @@ const CopyrightSection = styled.div`
   text-align: center;
 `;
 
+const pages = [
+  { label: 'Home', path: '/' },
+  { label: 'Contact Us', path: '/Contactus' },
+  { label: 'Services', path: '/services' },
+  { label: 'Terms & Conditions', path: '/terms' },
+  { label: 'About Us', path: '/Aboutus' },
+];
+
 const Footer = () => {
   return (
     <FooterSection>
@@ -151,11 +159,11 @@ const Footer = () => {
             <span className="animate-border border-black"></span>
             <br />
             <LinksList>
-              <LinkItem><a href="#">Home</a></LinkItem>
-              <LinkItem><a href="#">Contact Us</a></LinkItem>
-              <LinkItem><a href="#">Services</a></LinkItem>
-              <LinkItem><a href="#">Terms & Conditions</a></LinkItem>
-              <LinkItem><a href="#">About Us</a></LinkItem>
+              {pages.map((page) => (
+                <LinkItem key={page.label}>
+                  <a href={page.path}>{page.label}</a>
+                </LinkItem>
+              ))}
             </LinksList>
           </UsefulLinksSection>
         </FooterContainer>
