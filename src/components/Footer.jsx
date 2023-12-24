@@ -118,7 +118,7 @@ const CopyrightSection = styled.div`
 const pages = [
   { label: 'Home', path: '/' },
   { label: 'Contact Us', path: '/Contactus' },
-  { label: 'Services', path: '/services' },
+  { label: 'Services', path: '/Services' },
   { label: 'Terms & Conditions', path: '/terms' },
   { label: 'About Us', path: '/Aboutus' },
 ];
