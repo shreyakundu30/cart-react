@@ -108,7 +108,7 @@ const Alerts = () => {
       <AlertHeading>Important Travel Updates & Advisories <FontAwesomeIcon icon={faBell} shake style={{ color: '#F0A500' }} /></AlertHeading>
 
       <AlertSection><br />
-        <AlertTitle>Service Disruption - December 28, 2023  <FontAwesomeIcon icon={faTriangleExclamation} /></AlertTitle>
+        <AlertTitle>Service Disruption - January 16, 2024  <FontAwesomeIcon icon={faTriangleExclamation} /></AlertTitle>
         <AlertContent>
           Dear passengers, we are currently experiencing a temporary disruption in our booking services due to system maintenance. We apologize for the inconvenience and appreciate your understanding. Services will resume shortly.
         </AlertContent>
@@ -180,7 +180,7 @@ const Alerts = () => {
       <AlertSection>
         <AlertTitle>Enhanced Security Measures <FontAwesomeIcon icon={faUserShield} /></AlertTitle>
         <AlertContent>
-          Ensuring your safety with enhanced security measures. Travel confidently with RAILgaadi as we implement advanced security protocols across all our services.
+          Ensuring your safety with enhanced security measures. Travel confidently with RAILगाड़ी as we implement advanced security protocols across all our services.
         </AlertContent>
       </AlertSection>
 
