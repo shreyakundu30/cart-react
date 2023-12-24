@@ -92,7 +92,7 @@ const Alerts = () => {
         <NavLink to="/Loginpage" activeClassName="active">
           Login
         </NavLink>
-        <NavLink to="/register" activeClassName="active">
+        <NavLink to="/Registerpage" activeClassName="active">
           Register
         </NavLink>
       </nav>
