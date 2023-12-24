@@ -11,6 +11,8 @@ import SearchTrain from './components/SearchTrain';
 import Payment from './components/Payment';
 import Loginpage from './components/Loginpage';
 import Registerpage from './components/Registerpage';
+import Services from './components/Services';
+import TermC from './components/TermC';
 
 const App = () => {
   return (
@@ -29,6 +31,8 @@ const App = () => {
           <Route path="/Payment" element={<Payment />} />
           <Route path="/Loginpage" element={<Loginpage />} />
           <Route path="/Registerpage" element={<Registerpage />} />
+          <Route path="/Services" element={<Services />} />
+          <Route path="/TermC" element={<TermC />} />
 
           {/* Add more routes for other subtopics */}
         </Routes>
