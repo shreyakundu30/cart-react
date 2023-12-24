@@ -3,6 +3,8 @@ import styled from 'styled-components';
 import { NavLink, Link } from 'react-router-dom';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Footer from './Footer';
+import BackToTopButton from './BackToTopButton';
 
 const RegisterPageContainer = styled.div`
   display: flex;
@@ -280,7 +282,8 @@ const RegisterPage = () => {
     </RegisterPageContainer>
 
     <ToastContainer />
-
+    <Footer />
+      <BackToTopButton />
     </div>
   );
 };
