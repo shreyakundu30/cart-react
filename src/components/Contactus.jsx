@@ -8,6 +8,7 @@ import { faFacebook, faYoutube, faTwitter, faInstagram, faTelegram, faLinkedin, 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import emailjs from 'emailjs-com';
 
 const ContactHeader = styled.h1`
   text-align: center;
@@ -181,12 +182,28 @@ const Notification = styled.div`
 `;
 
 const ContactPage = () => {
-    const [isSubmitted, setIsSubmitted] = useState(false);
-  
-    const handleSubmit = (e) => {
-      e.preventDefault();
-      // Perform form submission logic here
-      // For simplicity, we'll just show a notification using react-toastify
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const templateParams = {
+        name: e.target.name.value,
+        phone: e.target.phone.value,
+        email: e.target.email.value,
+        subject: e.target.subject.value,
+        message: e.target.message.value,
+      };
+
+      // Replace 'YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', 'YOUR_USER_ID' with actual values
+      await emailjs.send(
+        'service_l5b8mb5',
+        'template_nw4r9jd',
+        templateParams,
+        'YuBm0dRsoYMu_zHD-'
+      );
+
       toast.success('Submission Successful!', {
         position: 'top-right',
         autoClose: 3000,
@@ -195,9 +212,13 @@ const ContactPage = () => {
         pauseOnHover: true,
         draggable: true,
       });
+
       setIsSubmitted(true);
-    
-    };
+    } catch (error) {
+      console.error('Error sending email:', error);
+      toast.error('Error submitting form. Please try again later.');
+    }
+  };
 
   return (
     <div>
@@ -244,7 +265,7 @@ const ContactPage = () => {
         <NavLink to="/Loginpage" activeClassName="active">
           Login
         </NavLink>
-        <NavLink to="/Registerpage" activeClassName="active">
+        <NavLink to="/register" activeClassName="active">
           Register
         </NavLink>
       </nav>
@@ -295,19 +316,17 @@ const ContactPage = () => {
 </div>
 </ContactDetails>
         <ContactFormContainer>
-          {/* Contact Form */}
-          <h1 style={{ textAlign: 'center', fontFamily: 'Times New Roman', fontSize: '35px', fontWeight: 'bold' }}>Contact Form <FontAwesomeIcon icon={faAddressBook} /></h1>
-          <p style={{ fontFamily: 'Comic Sans MS' }}>Have a question or need assistance ? Drop us a message using the contact form below, and our team will get back to you promptly. Your queries matter to us, and we're here to ensure your concerns are addressed with care.</p>
-          <br />
+          <h1>Contact Form <FontAwesomeIcon icon={faAddressBook} /></h1>
+          <p>Have a question or need assistance? Drop us a message using the contact form below, and our team will get back to you promptly. Your queries matter to us, and we're here to ensure your concerns are addressed with care.</p>
+
           <ContactForm onSubmit={handleSubmit}>
-            <FormInput type="text" placeholder="Your Name" required />
-            <FormInput type="tel" placeholder="Your Contact Number" required />
-            <FormInput type="email" placeholder="Your Email Address" required />
-            <FormInput type="text" placeholder="Subject" required />
-            <FormTextArea rows="4" placeholder="Your Message or Query" required />
+            <FormInput type="text" name="name" placeholder="Your Name" required />
+            <FormInput type="tel" name="phone" placeholder="Your Contact Number" required />
+            <FormInput type="email" name="email" placeholder="Your Email Address" required />
+            <FormInput type="text" name="subject" placeholder="Subject" required />
+            <FormTextArea name="message" rows="4" placeholder="Your Message or Query" required />
             <SubmitButton type="submit">Submit</SubmitButton>
           </ContactForm>
-          
         </ContactFormContainer>
         <ToastContainer position="top-right" autoClose={3000} hideProgressBar={false} newestOnTop={false} closeOnClick pauseOnFocusLoss draggable pauseOnHover />
       </ContactContainer>
@@ -318,3 +337,4 @@ const ContactPage = () => {
 };
 
 export default ContactPage;
+
